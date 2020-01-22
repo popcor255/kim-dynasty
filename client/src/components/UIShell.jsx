@@ -43,6 +43,13 @@ class UIShell extends Component {
     };
   }
 
+  addToItemBank = item => {
+    if (!item || !item.name) return false;
+    if(item.aisleNumber && !Number.isInteger(item.aisleNumber)) return false;
+    this.state.itemBank.push(item);
+    return true;
+  };
+
   onPatternSelection = label => {
     this.setState({ patternName: label });
   };

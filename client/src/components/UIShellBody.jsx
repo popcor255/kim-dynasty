@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SimpleList from "../pattern-components/SimpleList";
 import BasicPage from "../pattern-components/BasicPage";
 import "../pattern-components/patterns.scss";
+import DisplayForm from "../pattern-components/AddItemForm";
 
 class UIShellBody extends Component {
   components = {
@@ -16,7 +17,9 @@ class UIShellBody extends Component {
     return (
       <div className="pattern-container">
         <PatternName showDescription={true} />
+        <DisplayForm />
       </div>
+
     );
   }
 }
