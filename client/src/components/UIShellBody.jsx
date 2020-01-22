@@ -5,17 +5,17 @@ import "../pattern-components/patterns.scss";
 
 class UIShellBody extends Component {
   components = {
-    "Simple List": SimpleList,
+    "Regularly Used Items": SimpleList,
     "Basic Page": BasicPage
   };
   defaultComponent = "Basic Page";
 
   render() {
-    let curScreen = this.defaultComponent;
+    let curScreen = this.props.patternName;
     const PatternName = this.components[curScreen];
     return (
       <div className="pattern-container">
-        <PatternName showDescription={true} />
+        <PatternName showDescription={true} itemBank={this.props.itemBank }/>
       </div>
     );
   }
