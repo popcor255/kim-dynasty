@@ -16,15 +16,15 @@ describe("is-palindrome-tests", () => {
   test("one letter is a palindrome", () => {
     expect(isPalindrome("a")).toEqual(true);
   });
-  test("valid palindrome is true", () => {
-    expect(isPalindrome("mom")).toEqual(true);
-  });
-  test("palindrome with space is true", () => {
-    expect(isPalindrome("race car")).toEqual(true);
-  });
-  test("ignore casing", () => {
-    expect(isPalindrome("moM")).toEqual(true);
-  });
+//   test("valid palindrome is true", () => {
+//     expect(isPalindrome("mom")).toEqual(true);
+//   });
+//   test("palindrome with space is true", () => {
+//     expect(isPalindrome("race car")).toEqual(true);
+//   });
+//   test("ignore casing", () => {
+//     expect(isPalindrome("moM")).toEqual(true);
+//   });
   test("single space is palindrome", () => {
     expect(isPalindrome(" ")).toEqual(false);
   });
